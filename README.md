@@ -28,9 +28,9 @@ strip.show()  # show it
 
 Turn the LEDs on, one-by-one:
 
-```python
-from time import sleep
+(requires `from time import sleep`)
 
+```python
 # Turn them on (red), one-by-one
 for i in range(LEDS):
     strip.setPixelColorRGB(i, 255, 0, 0)
@@ -46,10 +46,9 @@ for i in range(LEDS):
 
 Random sparkles:
 
-```python
-from time import sleep
-from random import randint
+(requires `from time import sleep` and `from random import randint`)
 
+```python
 while True:
     i = randint(0, LEDS-1)
     r = randint(0, 255)
